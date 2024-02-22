@@ -1,0 +1,79 @@
+.footer {
+    padding: 30px 160px;
+    background-color: $color-grey-bg;
+
+    &__inner {
+        border-top: 2px solid $color-grey-separator;
+        padding-top: 30px;
+        &-top {
+            display: flex;
+            justify-content: space-between; 
+        }
+        &-top .location {
+            display: flex;
+            align-items: center;
+        }
+        &-top .location .place {
+            color: $color-main;
+            font-weight: 400;
+        }
+        &-top .location .map {
+            color: $color-active-regular;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            
+            &::before {
+                display: inline-block;
+                content: '';
+                width: 6px;
+                height: 6px;
+                margin: 0 10px;
+                border-radius: 50%;
+                background-color: $color-grey-text;
+            }
+        }
+        &-top .company .text {
+            color: $color-grey-text;
+            font-weight: 400;
+        }
+        & .comunication {
+            display: flex;
+            align-items: center;
+            margin-top: 21px;
+        }
+    } 
+}
+
+.sep + .sep::before {
+    display: inline-block;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin: 3px 10px;
+    border-radius: 50%;
+    background-color: $color-grey-text;
+}
+
+.comunication__item {
+    & .social {
+        width: 24px;
+        height: 24px;
+    } 
+    & .social svg:hover path {
+        fill: $color-accent;
+    }
+    & .tel {
+        color: $color-main-alt;
+        font-weight: 700;
+    }
+    & .mail {
+        color: $color-active-regular;
+        font-weight: 700;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.publications {
+    padding-top: 30px;
+    padding-left: 160px;
+    padding-right: 160px;
+    background-color: $color-grey-bg;
+    &__block {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        overflow: hidden;
+    }
+}
+.block__item {
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    &-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        display: block; 
+    }
+    &-content {
+        height: 100%;
+        background-color: $color-basic-white;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 8px 8px;
+        gap: 15px;   
+    }
+}
+.block__item-content .item__title {
+    margin: 0;
+    font-size: 16px;
+}
+.block__item-content .item__date {
+    color: $color-grey-text;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.block__item-content .item__desc {
+    border-top: 4px solid $color-grey-separator;
+    padding-top: 15px;
+    color: $color-basic-black;
+    font-size: 14px;
+    line-height: 22px;
+}

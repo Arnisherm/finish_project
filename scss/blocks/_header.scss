@@ -1,0 +1,66 @@
+.header {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+
+        & .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        & .menu__list {
+            display: flex;
+            justify-content: end;
+            gap: 15px;
+            color: $color-basic-white;
+
+            &-link {
+                color: $color-basic-white;
+            }
+
+            &-link:hover {
+                border-bottom: 2px solid $color-basic-white;
+            }
+        }
+
+        
+
+        & .comunication {
+            display: flex;
+            color: $color-basic-white;
+            align-items: center;
+
+            & .lang {
+                display: flex;
+                gap: 6px;
+
+                &-item {
+                    padding: 5px 7px;
+                    background-color: transparent;
+                    border-radius: 10px;
+                }
+                &-item:hover {
+                    background-color: $color-accent;
+                    cursor: pointer;
+                }
+            }
+
+            &__item .tel {
+                color: $color-basic-white;
+            }
+            &__item .social {
+                width: 24px;
+                height: 24px;
+                display: inline-flexbox;
+                align-items: center;
+                justify-content: center;
+            }
+            &__item .place {
+                display: inline;
+            }
+        }
+    }
+}

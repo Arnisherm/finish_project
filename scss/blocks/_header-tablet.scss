@@ -1,0 +1,52 @@
+.header-tablet{
+    display: none;
+    flex-direction: column;
+    padding-top: 50px;
+    justify-content: flex-start;
+    gap: 30px;
+    color: $color-basic-white;
+    & .logo {
+        display: inline-block;
+        margin-right: 50px;
+    }
+    & .comunication {
+        display: inline-flex;
+        align-items: center;
+        &__item .tel {
+            color: $color-basic-white;
+        }
+        &__item .social {
+            width: 24px;
+            height: 24px;
+            display: inline;
+        }
+        &__item .place {
+            display: inline;
+        }
+        & .lang {
+            display: flex;
+            gap: 6px;
+            &-item {
+                padding: 5px 7px;
+                background-color: transparent;
+                border-radius: 10px;
+            }
+            &-item:hover {
+                background-color: $color-accent;
+                cursor: pointer;
+            }
+        }
+    }
+    & .menu__list {
+        display: flex;
+        align-items: flex-end;
+        gap: 15px;
+        color: $color-basic-white;
+        &-link {
+            color: $color-basic-white;
+        }
+        &-link:hover {
+            border-bottom: 2px solid $color-basic-white;
+        }
+    }
+}

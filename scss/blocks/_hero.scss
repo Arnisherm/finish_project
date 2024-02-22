@@ -1,0 +1,31 @@
+.hero {
+    min-height: 100vh;
+    padding-left: 160px;
+    padding-right: 160px;
+    background-image: url(/images/Symbol.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    overflow: auto;
+
+    & .section__title{
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    & .btn {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+

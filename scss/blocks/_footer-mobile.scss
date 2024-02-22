@@ -1,0 +1,39 @@
+.footer-mobile {
+    display: none;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: $color-grey-bg;
+    & .footer__inner {
+        display: block;
+        & .location {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+            & .place {
+                color: $color-main;
+                font-weight: 400;
+            }
+            & .map {
+                color: $color-active-regular;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
+        & .comunication {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+        }
+        & .company {
+            margin-top: 30px;
+            text-align: center;
+            & .text {
+                color: $color-grey-text;
+            }
+        }
+    }
+}
